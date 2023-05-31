@@ -35,5 +35,5 @@ Having this to make the game more complete and also increase the user experience
 - Sound & Music: https://youtu.be/Gs5QxGrRzNQ
 - Level: https://youtu.be/Va90Uf28Tg8
 - Start & end page: https://youtu.be/1Ye-mCuIIdw
-- Image: https://www.flaticon.com/search?type=icon&search-group=all&word=banana&license=&color=&shape=&current_section=&author_id=&pack_id=&family_id=&style_id=&choice=&type=icon
+- Image: http://surl.li/hnavw
 - Music, Sound, environment: Unity
