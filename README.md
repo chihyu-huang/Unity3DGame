@@ -1,23 +1,27 @@
 # 3DGame
 
-This is an English learning racing game made with Unity.
-Read the "Game_A2_22209269.pdf" to see some example views of this game.
+- This is an English learning racing game made with Unity.
+- Read the "Game_A2_22209269.pdf" to see example views of this game.
+- Demo video: https://youtu.be/EI7ei9Z3iHo
 
+
+
+### Description
 The aim of this assignment are to learn these important techniques when creating a 3d game.
 
-- The controls
+#### The controls
 Here we could use W, A, S, D or arrow buttons to control the direction of this car going.
 
-- Gravity and force
+#### Gravity and force
 The avatar and game objects are rigid bodies and collisions which makes it more like the reality. Also, some affects are triggered by collision.
 
-- AI Co-learning
+#### AI Co-learning
 There's an avatar using as an AI to help player play the game. It gives different reaction according to player's behaviour/actions, shows sample to player like how to play the game and also giving hints to player.
 
-- Level of difficulty
+#### Level of difficulty
 There are two levels in this game, the difference between them are not only the car speed becomes faster also the words to be learned are harder. I also build a quiz after each level to make sure the player does learn the words/vocabularies.
 
-- Sound effects
+#### Sound effects
 Having this to make the game more complete and also increase the user experience.
 
 
