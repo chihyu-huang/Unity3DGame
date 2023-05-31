@@ -1,6 +1,7 @@
 # 3DGame
 
 This is an English learning racing game made with Unity.
+Read the "Game_A2_22209269.pdf" to see some example views of this game.
 
 The aim of this assignment are to learn these important techniques when creating a 3d game.
 
