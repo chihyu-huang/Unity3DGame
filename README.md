@@ -29,11 +29,11 @@ Having this to make the game more complete and also increase the user experience
 
 
 ### Reference
-Structure: https://learn.unity.com/pathway/junior-programmer
-Collision: https://youtu.be/B90r-209vYk
-Quiz: https://youtu.be/5CW1yGsVg4k
-Sound & Music: https://youtu.be/Gs5QxGrRzNQ
-Level: https://youtu.be/Va90Uf28Tg8
-Start & end page: https://youtu.be/1Ye-mCuIIdw
-Image: https://www.flaticon.com/search?type=icon&search- group=all&word=banana&license=&color=&shape=&current_section=&author_id=&pack_id=&f amily_id=&style_id=&choice=&type=icon
-Music, Sound, environment: Unity
+- Structure: https://learn.unity.com/pathway/junior-programmer
+- Collision: https://youtu.be/B90r-209vYk
+- Quiz: https://youtu.be/5CW1yGsVg4k
+- Sound & Music: https://youtu.be/Gs5QxGrRzNQ
+- Level: https://youtu.be/Va90Uf28Tg8
+- Start & end page: https://youtu.be/1Ye-mCuIIdw
+- Image: https://www.flaticon.com/search?type=icon&search-group=all&word=banana&license=&color=&shape=&current_section=&author_id=&pack_id=&family_id=&style_id=&choice=&type=icon
+- Music, Sound, environment: Unity
