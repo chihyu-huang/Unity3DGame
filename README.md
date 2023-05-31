@@ -24,7 +24,8 @@ Having this to make the game more complete and also increase the user experience
 
 
 ### Reference
-Structure: https://learn.unity.com/pathway/junior-programmer Collision: https://youtu.be/B90r-209vYk
+Structure: https://learn.unity.com/pathway/junior-programmer
+Collision: https://youtu.be/B90r-209vYk
 Quiz: https://youtu.be/5CW1yGsVg4k
 Sound & Music: https://youtu.be/Gs5QxGrRzNQ
 Level: https://youtu.be/Va90Uf28Tg8
