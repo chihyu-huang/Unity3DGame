@@ -3,26 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class Score : MonoBehaviour
 {
-    int score = 0;
+    static int score = 0;
+
+    public static int CurrentScore
+    {
+        get { return score; }
+        set { score = value; }
+    }
+
+    void Start(){
+        if(SceneManager.GetActiveScene().name == "Level1"){
+            CurrentScore = 0;
+        }
+    }
     
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] AudioSource correctSound;
+    [SerializeField] AudioSource falseSound;
 
-    // [SerializeField] AudioSource collectionSound;
-
-    private void OnTriggerEnter(Collider other){
-        if (other.gameObject.CompareTag("correct")){
-            Destroy(other.gameObject);
+    void OnTriggerEnter(Collider other){
+        if (other.gameObject.CompareTag("correct") || other.gameObject.CompareTag("correct2")){
             score++;
-            scoreText.text = "Score: " + score;
-            // collectionSound.Play();
-        } else if (other.gameObject.CompareTag("false")){
-            Destroy(other.gameObject);
+            correctSound.Play();
+        } else if (other.gameObject.CompareTag("false") || other.gameObject.CompareTag("false2")){
+            // Destroy(other.gameObject);
             score--;
-            scoreText.text = "Score: " + score;
-            // collectionSound.Play();
-        }
+            falseSound.Play();
+        } 
+        scoreText.text = "Score: " + score;
     }
 }

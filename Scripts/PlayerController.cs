@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,30 +11,45 @@ public class PlayerController : MonoBehaviour
     private float turnSpeed = 40.0f;
     private float horizontalInput;
     private float verticalInput;
+    // private static float zzz = 0;
 
-    public GameObject projectilePrefab;
+    // public static float zPosition
+    // {
+    //     get { return zzz; }
+    // }
 
-
-
+    // public GameObject projectilePrefab;
+    // public Transform carTransform;
+    
     void Update()
     {
-        // if(transform.position.x < -xRange){
-        //     transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
-        // }
-        // if(transform.position.x > xRange){
-        //     transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
-        // }
-        // transform.Translate(0, 0, 0.1f);
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.forward * Time.deltaTime * speed); // * verticalInput);
+
+        if(SceneManager.GetActiveScene().name == "Intro"){
+            speed = 0f;
+        }
+        if(SceneManager.GetActiveScene().name == "Practice"){
+            speed = 7.0f;
+            // transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+        }
+        if(SceneManager.GetActiveScene().name == "Level2"){
+            speed = 20.0f;
+        }
+
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        // transform.Translate(Vector3.forward * Time.deltaTime * speed); // * verticalInput);
         // transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
-    
-        if(Input.GetKeyDown(KeyCode.Space)){
-            Debug.Log("shoot");
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-        }
+        
+        // Debug.Log(carTransform.position.z);
+        // zzz= carTransform.position.z;
+        // if(Input.GetKeyDown(KeyCode.Space)){
+        //     Debug.Log("shoot");
+        //     Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        // }
+
+        // Debug.Log(SceneManager.GetActiveScene().name);
 
     }
 
